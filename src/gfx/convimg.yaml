@@ -1,0 +1,167 @@
+palettes:
+  - name: global_palette
+    fixed-entries: 
+      - color: {index: 0, r: 255, g: 0, b: 0}
+      - color: {index: 1, r: 0, g: 0, b: 0} 
+      - color: {index: 2, r: 255, g: 255, b: 255}
+    images: 
+      - title.png
+      - brick.png
+      - box.png
+      - floor.png
+      - goal.png
+      - player.png
+      - solved_box.png
+      - help_button.png
+      - help_button_hovered.png
+      - play_button.png
+      - play_button_hovered.png
+      - exit_button.png
+      - exit_button_hovered.png
+      - down_arrow.png
+      - up_arrow.png
+      - home_no_cursor.png
+      - home_with_cursor.png
+      - home_screen_right.png
+      - home_screen_right_charging.png
+
+converts:
+  - name: title
+    palette: global_palette
+    transparent-color-index: 0
+    images:
+      - title.png
+
+  - name: brick
+    palette: global_palette
+    transparent-color-index: 0
+    images:
+      - brick.png
+
+  - name: box
+    palette: global_palette
+    transparent-color-index: 0
+    images:
+      - box.png
+
+  - name: floor
+    palette: global_palette
+    transparent-color-index: 0
+    images:
+      - floor.png
+
+  - name: goal
+    palette: global_palette
+    transparent-color-index: 0
+    images:
+      - goal.png
+
+  - name: player
+    palette: global_palette
+    transparent-color-index: 0
+    images:
+      - player.png
+
+  - name: solved_box
+    palette: global_palette
+    transparent-color-index: 0
+    images:
+      - solved_box.png
+
+  - name: help_button
+    palette: global_palette
+    transparent-color-index: 0
+    images:
+      - help_button.png
+
+  - name: help_button_hovered
+    palette: global_palette
+    transparent-color-index: 0
+    images:
+      - help_button_hovered.png
+
+  - name: play_button
+    palette: global_palette
+    transparent-color-index: 0
+    images:
+      - play_button.png
+
+  - name: play_button_hovered
+    palette: global_palette
+    transparent-color-index: 0
+    images:
+      - play_button_hovered.png
+
+  - name: exit_button
+    palette: global_palette
+    transparent-color-index: 0
+    images:
+      - exit_button.png
+
+  - name: exit_button_hovered
+    palette: global_palette
+    transparent-color-index: 0
+    images:
+      - exit_button_hovered.png
+
+  - name: down_arrow
+    palette: global_palette
+    transparent-color-index: 0
+    images:
+      - down_arrow.png
+
+  - name: up_arrow
+    palette: global_palette
+    transparent-color-index: 0
+    images:
+      - up_arrow.png
+
+  - name: home_no_cursor
+    palette: global_palette
+    transparent-color-index: 0
+    images:
+      - home_no_cursor.png
+
+  - name: home_with_cursor
+    palette: global_palette
+    transparent-color-index: 0
+    images:
+      - home_with_cursor.png
+
+  - name: home_screen_right
+    palette: global_palette
+    transparent-color-index: 0
+    images:
+      - home_screen_right.png
+
+  - name: home_screen_right_charging
+    palette: global_palette
+    transparent-color-index: 0
+    images:
+      - home_screen_right_charging.png
+
+outputs:
+  - type: c
+    include-file: gfx.h
+    palettes:
+      - global_palette
+    converts:
+      - title
+      - brick
+      - box
+      - floor
+      - goal
+      - player
+      - solved_box
+      - help_button
+      - help_button_hovered
+      - play_button
+      - play_button_hovered
+      - exit_button
+      - exit_button_hovered
+      - down_arrow
+      - up_arrow
+      - home_no_cursor
+      - home_with_cursor
+      - home_screen_right
+      - home_screen_right_charging
